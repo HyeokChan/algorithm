@@ -5,11 +5,10 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        int n = 5;
+        int n = 10;
         String result = solution(n);
         System.out.println("result = " + result);
     }
-
     public static String solution(int n) {
         String answer = "";
         String[] idx_array = new String[]{"4", "1", "2"};
@@ -22,7 +21,6 @@ public class Main {
             }
             n = value;
         }
-
         return answer;
     }
 }
