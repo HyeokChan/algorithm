@@ -9,8 +9,8 @@ public class Main {
     }
 
     // 1 2 3 5
-    // 5 6 7 8
-    // 4 3 2 1
+    // 10 11 12 11
+    // 16 15 13 13
     public static int solution(int[][] land) {
         int answer = 0;
 
