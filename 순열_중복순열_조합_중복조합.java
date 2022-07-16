@@ -38,7 +38,7 @@ public class Main {
     // 순열
     public static void permutation(int[] source, int[] out, boolean[] visited, int depth, int r){
         if(depth == r){
-            result.add(out);
+            result.add(out.clone());
             for(int num : out) System.out.print(num + " ");
             System.out.println();
             return;
@@ -55,7 +55,7 @@ public class Main {
     // 중복 순열
     public static void repermutation(int[] source, int[] out, int depth, int r){
         if(depth == r){
-            result.add(out);
+            result.add(out.clone());
             for(int num : out) System.out.print(num + " ");
             System.out.println();
             return;
@@ -68,7 +68,7 @@ public class Main {
     // 조합
     public static void combination(int[] source, int[] out, boolean[] visited, int start, int depth, int r){
         if(depth == r){
-            result.add(out);
+            result.add(out.clone());
             for(int num : out) System.out.print(num + " ");
             System.out.println();
             return;
@@ -85,7 +85,7 @@ public class Main {
     // 중복조합
     public static void recombination(int[] source, int[] out, int start, int depth, int r){
         if(depth == r){
-            result.add(out);
+            result.add(out.clone());
             for(int num : out) System.out.print(num + " ");
             System.out.println();
             return;
